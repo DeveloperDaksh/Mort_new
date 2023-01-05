@@ -29,7 +29,7 @@ export const AccountGeneralSettings = (props) => {
   const updateName = () => {
     const currUser = firebase.auth().currentUser;
     console.log(name);
-    curruser
+    currUser
       ?.updateProfile({
         displayName: name,
       })

@@ -10,18 +10,18 @@ export const AuthGuard = (props) => {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-      // if (!router.isReady) {
-      //   return;
-      // }
+      if (!router.isReady) {
+        return;
+      }
 
-      // if (!auth.isAuthenticated) {
-      //   router.push({
-      //     pathname: '/authentication/login',
-      //     query: { returnUrl: router.asPath }
-      //   });
-      // } else {
-      //   setChecked(true);
-      // }
+      if (!auth.isAuthenticated) {
+        router.push({
+          pathname: '/authentication/login',
+          query: { returnUrl: router.asPath }
+        });
+      } else {
+        setChecked(true);
+      }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [router.isReady]);
