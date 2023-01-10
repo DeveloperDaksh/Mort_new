@@ -2,7 +2,7 @@ import numeral from "numeral";
 import { Box, Card, CardContent, CardHeader, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Chart } from "../../chart";
-import { GoogleMaps } from "./world-map";
+import { GoogleMaps } from "./GoogleMaps";
 //import USAMap from './map.svg';
 // import {}
 
