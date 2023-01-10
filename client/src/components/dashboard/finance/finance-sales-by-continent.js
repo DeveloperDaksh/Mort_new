@@ -103,7 +103,7 @@ export const FinanceSalesByContinent = (props) => {
               sa: '#4655CE'
             }}
           /> */}
-          <USAMap />
+          {/* <USAMap /> */}
         </Box>
         <Chart
           height={350}
